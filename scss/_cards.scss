@@ -1,0 +1,49 @@
+body{
+    font-family: $font;
+}
+.cards{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: $width_card;
+    height: $height_card;
+    border-radius: 10px;
+    background-color: $white;
+    padding: 1rem 1rem;
+    margin: 1rem;
+
+
+    h1{
+        margin: 1px;
+        color: $info_color;
+        font-weight: 600;
+    }
+
+    h3{
+        margin: 1px;
+        color: $secondary_color;
+        font-weight: 300;
+    }
+
+    &:hover{
+        background-color: $white;
+        color: $primary_color;
+    }
+
+    .card-footer{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    img.img{
+        width: 300px;
+    }
+}

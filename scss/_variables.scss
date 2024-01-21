@@ -1,0 +1,58 @@
+// VARIABLES
+$primary_color: #D3706E;
+$secondary_color: #EABF9D;
+$tertiary_color:#92514E;
+$info_color: #A18670;
+$danger_color: #CC544E;
+
+$width_card: 300px;
+$height_card: 450px;
+
+$white: #FFF;
+$black: #000;
+
+$font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+//MAPAS
+$size_button_width:(
+    sm: 110px,
+    md: 120px,
+    lg: 130px
+);
+
+$size_button_height:(
+    sm: 35px,
+    md: 40px,
+    lg: 45px
+);
+
+$color:(
+    primary: $primary_color,
+    secondary: $secondary_color,
+    tertiary: $tertiary_color,
+    info: $info_color,
+    danger: $danger_color
+);
+
+
+//FOR EACH (uso de mapas)
+@each $clave, $valor in $color{
+    .btn.#{$clave}{
+        background-color: $valor;
+        color: $black;
+    }
+}
+
+@each $clave, $valor in $size_button_width{
+    .btn.#{$clave}{
+        width: $valor;
+    }
+}
+
+@each $clave, $valor in $size_button_height{
+    .btn.#{$clave}{
+        height: $valor;
+    }
+}
+
+

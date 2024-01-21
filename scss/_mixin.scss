@@ -1,0 +1,25 @@
+//Genera los mixin
+@mixin btn($border){
+    border-radius: $border;
+}
+
+@mixin shadow ($x, $y, $color){
+    box-shadow: $x $y $color;
+}
+
+@mixin card($border_card){
+    border: $border_card;
+}
+
+//Aplica los mixin
+.sombra{
+    @include shadow(3px, 3px, #e7e7e7);
+}
+
+.btn{
+    @include btn(40px);
+}
+
+.card{
+    @include card(1px solid #dbdbdb);
+}

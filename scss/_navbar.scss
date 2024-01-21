@@ -1,0 +1,24 @@
+div.navbar {
+    margin: -16px;
+    padding-bottom: 20px;
+}
+
+div.navbar ul{
+    list-style-type: none;
+    padding: 30px;
+    background-color: $primary_color;
+    
+    li{
+        display: inline;
+        margin: 0 10px 0 0;
+        
+        a{
+            text-decoration: none;
+            color: $white;
+
+            &:hover{
+                color: $secondary_color;
+            }
+        }
+    }
+}
